@@ -1,0 +1,19 @@
+ 
+  <% include ./partials/header.ejs %>
+
+  <div class="w-full h-screen bg-zinc-300 flex justify-center items-center bg-auto bg-contain bg-cover bg-[url('https://media.istockphoto.com/id/1452736895/photo/green-genuine-leather-texture-background-for-vintage-classic-concept-emerald-color-background.jpg?s=1024x1024&w=is&k=20&c=E9AcGd68_75v1BYYnzGHSubnZdzwatSCNB8N4oMjNZ0=')]">
+     <div class="w-[24rem] bg-zinc-100 px-5 py-5 rounder rounded-md">
+      <h1 class="text-4xl tracking-tighter capitalize text-center text-zinc-700 leading-none">Wel come to pinterest</h1>
+      <form action="/login" method="post">
+        <input class="rounded-md block my-2 w-full px-3 py-2" type="text" name="username" placeholder="username">
+        <input class="rounded-md block my-2 w-full px-3 py-2" type="password" name="password" placeholder="password">
+        <a href="#" class="my-2 inline-block text-zinc-500 capitalize">Forget password ?</a>
+        <input class="block my-2 w-full px-3 py-2 bg-red-600 rounded-full text-white font-bold" type="submit" value="Login">
+
+        <p class="my-3 mx-5 tracking-tighter text-center">By continuing, you agree to Pinterest's Business <a class="text-zinc-700 border-b-2 font-bold" href="#">Terms of Service</href=>; Opens a new tab and acknowledge you've read our <a href="#" class="text-zinc-700 border-b-2 font-bold">Privacy Policy</a></p>
+      </form>
+      <a class="w-full mt-7 font-semibold text-center inline-block" href="/register">Create your pin account</a>
+     </div>
+  </div>
+
+<% include ./partials/footer.ejs %>
